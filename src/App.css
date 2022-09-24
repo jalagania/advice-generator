@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body {
+  height: 100vh;
+  padding: 0 1rem;
+  font-family: "Manrope", sans-serif;
+  background-color: #1f2632;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container {
+  max-width: 55rem;
+  padding: 4rem;
+  background-color: #323a49;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.advice-number {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #52ffa8;
+  margin-bottom: 3rem;
+}
+
+.advice-quote {
+  font-size: 2.5rem;
+  color: #cee3e9;
+  margin-bottom: 3rem;
+}
+
+.divider {
+  width: 100%;
+  margin: 0 auto 3rem auto;
+}
+
+button {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #52ffa8;
+  border: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  box-shadow: 0 0 20px #52ffa8;
+}
+
+button:active {
+  scale: 0.95;
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 3rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .advice-number {
+    font-size: 1.2rem;
+  }
+
+  .advice-quote {
+    font-size: 2.2rem;
   }
 }
