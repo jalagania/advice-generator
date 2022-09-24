@@ -1,0 +1,31 @@
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #cee3e9;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.attribution a:link,
+a:visited {
+  text-decoration: none;
+  color: #52ffa8;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .attribution {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .attribution {
+    font-size: 1.2rem;
+  }
+}

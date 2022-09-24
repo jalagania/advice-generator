@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./App.css";
+import Attribution from "./Attribution";
 import dice from "./images/icon-dice.svg";
 import divider from "./images/pattern-divider-desktop.svg";
 
@@ -21,13 +22,16 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <p className="advice-number">{`Advice #${adviceID}`}</p>
-      <p className="advice-quote">{advice}</p>
-      <img className="divider" src={divider} alt="divider pattern" />
-      <button className="btn-dice" onClick={handleAdviceButton}>
-        <img src={dice} alt="dice logo" />
-      </button>
+    <div>
+      <div className="container">
+        <p className="advice-number">{`Advice #${adviceID}`}</p>
+        <p className="advice-quote">{advice}</p>
+        <img className="divider" src={divider} alt="divider pattern" />
+        <button className="btn-dice" onClick={handleAdviceButton}>
+          <img src={dice} alt="dice logo" />
+        </button>
+      </div>
+      <Attribution />
     </div>
   );
 }
