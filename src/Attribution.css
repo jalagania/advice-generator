@@ -2,10 +2,7 @@
   font-size: 1.6rem;
   text-align: center;
   color: #cee3e9;
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-bottom: 2rem;
 }
 
 .attribution a:link,
